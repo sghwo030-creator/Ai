@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Clicker Keren</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; text-align: center; background: #222; color: #fff; padding-top: 50px; }
+        .game-box { background: #333; padding: 30px; display: inline-block; border-radius: 15px; box-shadow: 0px 0px 15px rgba(0,0,0,0.5); }
+        button { padding: 15px 25px; font-size: 18px; cursor: pointer; border: none; border-radius: 8px; margin: 10px; transition: 0.2s; }
+        #btn-click { background: #00adb5; color: white; font-weight: bold; }
+        #btn-click:active { transform: scale(0.95); }
+        #btn-upgrade { background: #ff5722; color: white; }
+        #btn-upgrade:disabled { background: #555; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+
+    <div class="game-box">
+        <h1>🎮 Py-Web Clicker Game 🎮</h1>
+        <h2>Skor: <span id="skor-tampil">0</span> 💰</h2>
+        <p>Poin per Klik: <span id="click-power">1</span></p>
+        
+        <button id="btn-click">KLIK AKU!</button>
+        <br>
+        <button id="btn-upgrade" disabled>Beli Auto-Clicker (Biaya: 10)</button>
+        <p><small>Auto-Clicker memberi +1 poin otomatis setiap detik</small></p>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
